@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
@@ -6,63 +7,55 @@
         <link rel="stylesheet" type="text/css" href=""></link>
         <meta charset="utf-8">
         <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                alert("funcionou");
+            });
+
+        </script>
         <style>
             .site{
-                width:1800px;
-                height:750px;
-                border:1px solid #fcac89;
-                padding:0px;
+                width:900px;
+                height:645px;
             }
             .header{
-                width:1800px;
-                height:50px;
-                border:1px #fcac89;
-                padding:0px;
-                background: rgb(242,221,204);
-                background: radial-gradient(circle, rgba(242,221,204,1) 0%, rgba(252,172,137,1) 100%);
+                width:inherit;
+                height:20px;
+                background: rgb(255,202,202);
+                background: radial-gradient(circle, rgba(255,202,202,1) 0%, rgba(255,145,145,1) 51%);
             }
             .main{
-                width:1800px;
-                height:550px;
-                border:1px solid #fcac89;
-                padding:0px;
+                width:inherit;
+                height:560px;
             }
             .footer{
-                width:1800px;
-                height:150px;
-                border:1px #fcac89;
-                padding:0px;
-                background: rgb(242,221,204);
-                background: radial-gradient(circle, rgba(242,221,204,1) 0%, rgba(252,172,137,1) 100%);
+                width:inherit;
+                height:145px;
+                background: rgb(255,202,202);
+                background: radial-gradient(circle, rgba(255,202,202,1) 0%, rgba(255,145,145,1) 51%);
             }
             .esquerda{
-                width:200px;
-                height:550px;
-                border:1px solid #fcac89;
+                width:50px;
+                height:560px;
                 display:inline-block;
                 float:right;
-                background-color:#fcac89;
+                background-color:#ff9191;
             }
             .centro{
-                width:1400px;
-                height:550px;
-                border:1px solid #fcac89;
+                width:800px;
+                height:560px;
                 display: inline-block;
                 float: right;
+                background-color: #ffcaca;
             }
             .direita{
-                width:194px;
-                height:550px;
-                border:1px solid #fcac89;
+                width:50px;
+                height:560px;
                 display: inline-block;
                 float: right;
-                background-color:#fcac89;
+                background-color:#ff9191;
             }
         </style>
-        <script>
-                let nome= "theo";
-                alert(nome);         
-        </script>
     </head>
 
     <body>
@@ -72,39 +65,40 @@
             </div>
 
             <div class="main">
-                <div class="esquerda"></div>
+                <div class="esquerda">
+                </div>
 
                 <div class="centro">
                     <fieldset>
+
                         <legend> Calculadora</legend>
                         <input type="number" id="campo">
                         <br></br>
                         <button id="btn_um">1</button>
                         <button id="btn_dois">2</button>
                         <button id="btn_tres">3</button>
+                        <button id="btn_adicao">+</button>                 
+                        <button id="btn_subtracao">-</button>
                         <br></br>
                         <button id="btn_quatro">4</button>
                         <button id="btn_cinco">5</button>
                         <button id="btn_seis">6</button>
+                        <button id="btn_divisao">÷</button>
+                        <button id="btn_multiplicacao">×</button>
                         <br></br>
                         <button id="btn_sete">7</button>
                         <button id="btn_oito">8</button>
-                        <button id="btn_nove">9</button>
-                        <button id="btn_zero">0</button>
-                        <br></br>
-                        <button id="btn_adicao">+</button>                 
-                        <button id="btn_subtracao">-</button>
-                        <button id="btn_divisao">÷</button>                     
+                        <button id="btn_nove">9</button>                     
                         <button id="btn_porcentagem">%</button>
                         <button id="btn_potencia">^</button>
-                        <button id="btn_multiplicacao">×</button>
+                        <br></br>
                         <button id="btn_ponto">.</button>
+                        <button id="btn_zero">0</button>
                         <button id="btn_pa">(</button>
                         <button id="btn_pf">)</button>
-                        <br></br>
                         <button id="btn_limpar">C</button>
+                        <br></br>
                         <button id="btn_igual">=</button>
-                        
                         
                     </fieldset>
                 </div>
