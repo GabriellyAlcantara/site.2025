@@ -13,103 +13,47 @@
             });
 
         </script>
+
         <style>
-            .site{
-                width:900px;
-                height:645px;
-            }
-            .header{
-                width:inherit;
-                height:20px;
-                background: rgb(255,202,202);
-                background: radial-gradient(circle, rgba(255,202,202,1) 0%, rgba(255,145,145,1) 51%);
-            }
-            .main{
-                width:inherit;
-                height:560px;
-            }
-            .footer{
-                width:inherit;
-                height:145px;
-                background: rgb(255,202,202);
-                background: radial-gradient(circle, rgba(255,202,202,1) 0%, rgba(255,145,145,1) 51%);
-            }
-            .esquerda{
-                width:50px;
-                height:560px;
-                display:inline-block;
-                float:right;
-                background-color:#ff9191;
-            }
-            .centro{
-                width:800px;
-                height:560px;
-                display: inline-block;
-                float: right;
-                background-color: #ffcaca;
-            }
-            .direita{
-                width:50px;
-                height:560px;
-                display: inline-block;
-                float: right;
-                background-color:#ff9191;
-            }
         </style>
+
     </head>
 
     <body>
-        <div class="site">
-            <div class="header">
-
-            </div>
-
-            <div class="main">
-                <div class="esquerda">
-                </div>
-
-                <div class="centro">
                     <fieldset>
 
                         <legend> Calculadora</legend>
-                        <input type="number" id="campo">
+                        <input type="text" id="visor">
                         <br></br>
-                        <button id="btn_um">1</button>
-                        <button id="btn_dois">2</button>
-                        <button id="btn_tres">3</button>
-                        <button id="btn_adicao">+</button>                 
-                        <button id="btn_subtracao">-</button>
+                        <button id="btn_um" onclick="adicionar('1')">1</button>
+                        <button id="btn_dois" onclick="adicionar('2')">2</button>
+                        <button id="btn_tres" onclick="adicionar('3')">3</button>
+                        <button id="btn_adicao" onclick="adionar('+')">+</button>
+                        <button id="btn_porcentagem" onclick="adicionar('%')">%</button>                 
                         <br></br>
-                        <button id="btn_quatro">4</button>
-                        <button id="btn_cinco">5</button>
-                        <button id="btn_seis">6</button>
-                        <button id="btn_divisao">÷</button>
-                        <button id="btn_multiplicacao">×</button>
+                        <button id="btn_quatro" onclick="adicionar('4')">4</button>
+                        <button id="btn_cinco" onclick="adicionar('5')">5</button>
+                        <button id="btn_seis" onclick="adicionar('6')">6</button>
+                        <button id="btn_subtracao" onclick="adionar('-')">-</button>
+                        <button id="btn_potencia" onclick="adicionar('^')">^</button>
+                        <button id="btn_multiplicacao" onclick="adicionar('*')">×</button>
                         <br></br>
-                        <button id="btn_sete">7</button>
-                        <button id="btn_oito">8</button>
-                        <button id="btn_nove">9</button>                     
-                        <button id="btn_porcentagem">%</button>
-                        <button id="btn_potencia">^</button>
+                        <button id="btn_sete" onclick="adicionar('7')">7</button>
+                        <button id="btn_oito" onclick="adicionar('8')">8</button>
+                        <button id="btn_nove" onclick="adicionar('9')">9</button>
+                        <button id="btn_divisao" onclick="adicionar('/')">/</button>                     
+                        <button id="btn_potencia" onclick="adicionar('^')">^</button>
                         <br></br>
-                        <button id="btn_ponto">.</button>
-                        <button id="btn_zero">0</button>
-                        <button id="btn_pa">(</button>
-                        <button id="btn_pf">)</button>
-                        <button id="btn_limpar">C</button>
+                        <button id="btn_ponto" onclick="adicionar('.')">.</button>
+                        <button id="btn_zero" onclick="adicionar('0')">0</button>
+                        <button id="btn_pa" onclick="adicionar('(')">(</button>
+                        <button id="btn_pf" onclick="adicionar(')')">)</button>
                         <br></br>
-                        <button id="btn_igual">=</button>
+                        <button id="btn_limpar" onclick="Limpar()">C</button>
+                        <button id="btn_igual" onclick="calcular()">=</button>
                         
                     </fieldset>
+
                 </div>
-
-                <div class="direita"></div>
-            </div>
-
-            <div class="footer">
-
-            </div>
-
-        </div>
     </body>
 </html>
