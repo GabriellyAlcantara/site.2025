@@ -1,1 +1,76 @@
+// Aprendendo JavaScript:
+
+// comando "//" cria comentarios.
+// comentários servem para deixar códigos organizados.
+
+// javascript é case sensitive (diferencia letras maiusculas de letras minusculas)
+// variáveis serve para armazenar informações (pode ser qualquer nome, número...).
+// elas sao organizadas em string, int, boolean, etc.
+// comando que cria variaveis é o "let", porem é possível usar também o "const".
+
+// para mostrar alguma coisa na tela, e usado o codigo "console.log();"
+
+// "=" atribuicao.
+
+// "" usa-se apenas quando tem letra
+
+// * multiplicacao
+// / divisao
+// = recebe
+// === igual
+// == vale
+// != diferente
+// > maior
+// < menor
+// && e 
+// || ou
+
+
+// variaveis:
+
+// variavel do tipo string tem que colocar "" :
+
+ let idadex = "dezessete anos";
+ let complemento= " de idade";
+ console.log(idadex + complemento);
+ 
+ // variaveis do tipo inteiro/int:
+ 
+ let altura = 150;
+ altura += 10;
+ console.log(altura);
+ 
+ // variavel do tipo boleano/boolean (serve para comparar as coisas):
+ 
+ let numero1 = 11;
+ let numero2 = 9;
+ let numero3 = 10;
+ 
+ console.log(numero1===numero3);
+ 
+ // trabalhando com condicionais:
+ 
+ if(numero1==10){
+     console.log("o numero1 vale 10");
+ } else{
+     console.log("o numero1 é diferente de 10");
+ }
+ 
+ // Questão 1 -> Sabe-se que as pessoas abaixo de 16 anos não podem votar. As pessoas com idade entre 16 e 18 possuem voto facultativo, as pessoas com idade entre 18 e 70 possuem voto obrigatório e as pessoas com idade acima de 70 anos também possuem voto facultativo. Faça um código que diga através da idade, a condição de voto dela.
+ 
+ 
+ let idade = 19;
+ 
+ if(idade <16){
+     console.log("Eleitor não pode votar.");
+ } else if (idade >=18 && idade <=70){
+     console.log("Eleitor é obrigatório a votar.");
+ } else if (idade >=16 && idade <18 && idade >70){
+     console.log("Eleitor possui voto facultativo.");
+ }
+
+// Questão 2 -> Ganhar na mega sena é o sonho de todo brasileiro. Diariamente milhares de pessoas apostam sonhando com a chance de mudar de vida. Faça um código que verefique os números apostados e osnúmeros sorteados e diga se o apostador ganhou na quadra, quina ou sena.
+
+ 
+ 
 
