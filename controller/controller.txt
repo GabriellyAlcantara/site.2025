@@ -16,15 +16,17 @@
 
 // * multiplicacao
 // / divisao
-// = recebe
-// === igual
-// == vale
+// = recebe -> atribuição de valor
+// === comparação
+// == vale - igual
 // != diferente
 // > maior
 // < menor
 // && e 
 // || ou
 
+// if - "se"
+// else - "senão"
 
 // variaveis:
 
@@ -65,12 +67,75 @@
      console.log("Eleitor não pode votar.");
  } else if (idade >=18 && idade <=70){
      console.log("Eleitor é obrigatório a votar.");
- } else if (idade >=16 && idade <18 && idade >70){
+ } else if (idade >=16 && idade <18 || idade >70){
      console.log("Eleitor possui voto facultativo.");
  }
 
 // Questão 2 -> Ganhar na mega sena é o sonho de todo brasileiro. Diariamente milhares de pessoas apostam sonhando com a chance de mudar de vida. Faça um código que verefique os números apostados e osnúmeros sorteados e diga se o apostador ganhou na quadra, quina ou sena.
 
- 
- 
+// para começar declare variáveis
+//declarando as variáveis dos números sorteados:
 
+let numerosorteado1 = 19;
+let numerosorteado2 = 95;
+let numerosorteado3 = 56;
+let numerosorteado4 = 48;
+let numerosorteado5 = 23;
+let numerosorteado6 = 98;
+
+// declarando as variáveis dos números apostados:
+
+let numeroapostado1 = 95;
+let numeroapostado2 = 56;
+let numeroapostado3 = 19;
+let numeroapostado4 = 48;
+let numeroapostado5 = 98;
+let numeroapostado6 = 23;
+
+//verificação da dezena sorteada:
+
+let dezena1;
+let dezena2;
+let dezena3;
+let dezena4;
+let dezena5;
+let dezena6;
+
+// agora comece a fazer comparações:
+
+if (numeroapostado1 == numerosorteado1 || numeroapostado1 == numerosorteado2 || numeroapostado1 == numerosorteado3 || numeroapostado1 == numerosorteado4 || numeroapostado1 == numerosorteado5 || numeroapostado1 == numerosorteado6){
+    
+    dezena1 = 0;
+    console.log(dezena1);
+}
+if (numeroapostado2 == numerosorteado1 || numeroapostado2 == numerosorteado2 || numeroapostado2 == numerosorteado3 || numeroapostado2 == numerosorteado4 || numeroapostado2 == numerosorteado5 || numeroapostado2 == numerosorteado6){
+    
+    dezena2 = 0;
+    console.log(dezena2);
+}
+if (numeroapostado3 == numerosorteado1 || numeroapostado3 == numerosorteado2 || numeroapostado3 == numerosorteado3 || numeroapostado3 == numerosorteado4 || numeroapostado3 == numerosorteado5 || numeroapostado3 == numerosorteado6){
+    
+    dezena3 = 0;
+    console.log(dezena3);
+}
+if (numeroapostado4 == numerosorteado1 || numeroapostado4 == numerosorteado2 || numeroapostado4 == numerosorteado3 || numeroapostado4 == numerosorteado4 || numeroapostado4 == numerosorteado5 || numeroapostado4 == numerosorteado6){
+    
+    dezena4 = 0;
+    console.log(dezena4);
+}
+if (numeroapostado5 == numerosorteado1 || numeroapostado5 == numerosorteado2 || numeroapostado5 == numerosorteado3 || numeroapostado5 == numerosorteado4 || numeroapostado5 == numerosorteado5 || numeroapostado5 == numerosorteado6){
+    
+    dezena5 = 0;
+    console.log(dezena5);
+}
+if (numeroapostado6 == numerosorteado1 || numeroapostado6 == numerosorteado2 || numeroapostado6 == numerosorteado3 || numeroapostado6 == numerosorteado4 || numeroapostado6 == numerosorteado5 || numeroapostado6 == numerosorteado6){
+    
+    dezena6 = 0;
+    console.log(dezena6);
+}
+
+
+
+
+ 
+ 
